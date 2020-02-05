@@ -1,0 +1,60 @@
+.gm-style .gm-style-iw-c {
+	padding: 0px;
+}
+.gm-style .gm-style-iw-d {
+    overflow: unset !important;
+}
+
+/* Infow Window Close Button Color*/
+.gm-ui-hover-effect img{
+	filter: invert(100%);
+}
+/* Arrow Color Change */
+.gm-style .gm-style-iw-t::after {
+	background: linear-gradient(45deg,rgba(0,0,0,1) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 100%);
+}
+/* Close Button Border*/
+.gm-ui-hover-effect{
+	border: 1px soild white;
+}
+/**/
+.gm-style .gm-style-iw-c {
+	background-color: black;
+}
+
+.infoWindowView{
+	width: 100%;
+	box-sizing: border-box;
+	height: 150px;
+	padding: 15px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	display: flex;
+}
+.markerImg{
+	width: 150px;
+	height: 120px;
+}
+.markerText{
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 100%;
+	text-align: center;
+}
+@media all and (max-width: 700px) {
+	.infoWindowView{
+		padding: 10px;
+		padding-top: 15px;
+	}
+	.markerImg{
+		width: 100px;
+		height: 100px;
+	}
+	.markerText{
+		padding-left: 5px;
+		padding-right: 5px;
+		width: 100%;
+		text-align: center;
+	}
+}

@@ -1,0 +1,41 @@
+{
+    "name": "bimyar_mobile",
+    "private": true,
+    "author": "@waltergar",
+    "version": "1.0.0",
+    "keywords": [
+        "react"
+    ],
+    "repository": {
+        "type": "git"
+    },
+    "license": "MIT",
+    "scripts": {
+        "lerna": "lerna",
+        "client": "lerna run client --parallel",
+        "server": "lerna run watch --scope server --parallel",
+        "bootstrap": "yarn && yarn lerna run bootstrap",
+        "test": "lerna run test",
+        "build": "lerna run build",
+        "clean": "lerna clean --yes && rm -rf ./node_modules",
+        "publish": "lerna publish",
+        "lint": "lerna run lint"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+        "concurrently": "4.1.0",
+        "lerna": "^3.14.1"
+    },
+    "sideEffects": false,
+    "publishConfig": {
+        "access": "private"
+    },
+    "workspaces": [
+        "packages/*",
+        "packages/shared/*"
+    ],
+    "engines": {
+        "node": ">=10.0.0"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "packages": [
+        "packages/*",
+        "packages/shared/*"
+    ],
+    "version": "0.0.0",
+    "npmClient": "yarn",
+    "useGitVersion": true,
+    "useWorkspaces": true
+}
